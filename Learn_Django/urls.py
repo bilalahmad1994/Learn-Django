@@ -22,6 +22,6 @@ from django.conf.urls import include
 urlpatterns = [
     url(r'^$',views.index,name='index'),
     url(r'^formmodel/',views.form_name_view,name='form_name_view'),
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin/',admin.site.urls),
 
 ]
