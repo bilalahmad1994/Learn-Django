@@ -15,11 +15,11 @@ from first_app.models import AccessRecord,Webpage,Topic
 def help(request):
     return HttpResponse('<em>Hello you are in help?</em>')
 
-# def index(request):
-#     context = locals()
-#     mydic={'insert_me',}
-#     templates = 'firstapp/index.html'
-#     return render(request, templates, context)
+def index(request):
+    context = locals()
+    mydic={'insert_me',}
+    templates = 'firstapp/index.html'
+    return render(request, templates, context)
 
 def index(request):
     webpages_list = AccessRecord.objects.order_by('date')
